@@ -10,6 +10,6 @@ later = dt.datetime(now.year, now.month, now.day, int(h), int(m))
 seconds = (later - now).total_seconds()
 if seconds > 0:
     print("will be shutdown in " + str(seconds) + "seconds")
-    os.system("shutdown -s -t 1")
+    os.system("shutdown -s -t " + str(int(seconds)))
 else:
     print("That's not happening today")
