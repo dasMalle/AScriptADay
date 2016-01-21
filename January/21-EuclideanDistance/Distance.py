@@ -1,7 +1,7 @@
 import numpy as np
 
 
-# calculates the euclidean distance between two n-dimensional vectors
+# calculates the euclidean distance between two n-dimensional points
 def dist(x, y):
     sumSR = 0.0
     for i in range(len(x)):
