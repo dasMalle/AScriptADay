@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class HSVColor  {
 
@@ -31,4 +30,5 @@ public class HSVColor  {
         }
         return new Vector3(h, s, l);
     }
+    
 }
