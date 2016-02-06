@@ -21,7 +21,7 @@ public class ColorWheel : MonoBehaviour {
         obj.color = Color.HSVToRGB(h, 1, 1);
         if (h < 1)
         {
-            h = h + 0.0001f; //Input.acceleration.x; 
+            h = h + Input.acceleration.x* 0.005f; 
         }
         else
         {
