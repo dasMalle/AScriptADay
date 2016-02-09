@@ -10,10 +10,9 @@ public class AsteroidSpawn : MonoBehaviour {
     public float range;
 
 
-    private List<GameObject> objInstances;
+    private List<GameObject> objInstances = new List<GameObject>();
     // Use this for initialization
 	void Start () {
-        objInstances = new List<GameObject>();
 
 	}
 	
@@ -53,5 +52,11 @@ public class AsteroidSpawn : MonoBehaviour {
     private Vector3 getPosition()
     {
         return centrum.transform.position + Random.insideUnitSphere * range + new Vector3(range, range, 0);
+    }
+
+    public int AsteroidCount()
+    {
+
+        return objInstances.Count;
     }
 }
