@@ -15,7 +15,7 @@ public class MoveShip : MonoBehaviour {
 
     #elif UNITY_ANDROID
 
-        transform.Translate(Input.acceleration.x *0.5f, Input.acceleration.y*0.5,f 0);
+        transform.Translate(Input.acceleration.x *0.5f, Input.acceleration.y*0.5f, 0.0f);
     #endif
     }
 }
