@@ -10,6 +10,7 @@ public class ColorWheel : MonoBehaviour {
     public float h = 0.2f;
     public Vector3 hsv;
 
+
     // Use this for initialization
 	void Start () {
 	}
@@ -27,4 +28,14 @@ public class ColorWheel : MonoBehaviour {
             h = 0;
         }
     }
+
+    /*returns an array of colours in the same colourspace as the input color
+    public Color[] GetMonochromeColors(Color c)
+    {
+
+        float h, s, v;
+        Color.RGBToHSV(c, out h, out s, out v);
+
+    } */
+
 }
